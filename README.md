@@ -1,2 +1,2 @@
 # go-around
-A rent a car iOS app
+Rent a car iOS app
