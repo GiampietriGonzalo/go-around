@@ -13,6 +13,17 @@
 		7A9262982AE68CAD00B4BE08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9262972AE68CAD00B4BE08 /* Preview Assets.xcassets */; };
 		7A9262A22AE6983200B4BE08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9262A12AE6983200B4BE08 /* HomeView.swift */; };
 		7A9262A52AE6988400B4BE08 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9262A42AE6988400B4BE08 /* HomeViewModel.swift */; };
+		7ADC16282AE7DAF300B7B442 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC16272AE7DAF300B7B442 /* CarDetailView.swift */; };
+		7ADC162B2AE7DB0600B7B442 /* CarDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC162A2AE7DB0600B7B442 /* CarDetailViewModel.swift */; };
+		7ADC162F2AE7DB4F00B7B442 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC162E2AE7DB4F00B7B442 /* TripView.swift */; };
+		7ADC16322AE7DB6200B7B442 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC16312AE7DB6200B7B442 /* TripViewModel.swift */; };
+		7ADC16362AE7DB7B00B7B442 /* AddCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC16352AE7DB7B00B7B442 /* AddCarView.swift */; };
+		7ADC16392AE7DB8E00B7B442 /* AddCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC16382AE7DB8E00B7B442 /* AddCarViewModel.swift */; };
+		7ADC163D2AE7DBB800B7B442 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC163C2AE7DBB800B7B442 /* MessageView.swift */; };
+		7ADC16402AE7DBCD00B7B442 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC163F2AE7DBCD00B7B442 /* MessageViewModel.swift */; };
+		7ADC16442AE7DBE900B7B442 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC16432AE7DBE900B7B442 /* ProfileView.swift */; };
+		7ADC16472AE7DBF800B7B442 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC16462AE7DBF800B7B442 /* ProfileViewModel.swift */; };
+		7ADC164C2AE7E01000B7B442 /* PrimaryItemTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC164B2AE7E01000B7B442 /* PrimaryItemTabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +34,17 @@
 		7A9262972AE68CAD00B4BE08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A9262A12AE6983200B4BE08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7A9262A42AE6988400B4BE08 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7ADC16272AE7DAF300B7B442 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		7ADC162A2AE7DB0600B7B442 /* CarDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModel.swift; sourceTree = "<group>"; };
+		7ADC162E2AE7DB4F00B7B442 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		7ADC16312AE7DB6200B7B442 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		7ADC16352AE7DB7B00B7B442 /* AddCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarView.swift; sourceTree = "<group>"; };
+		7ADC16382AE7DB8E00B7B442 /* AddCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewModel.swift; sourceTree = "<group>"; };
+		7ADC163C2AE7DBB800B7B442 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		7ADC163F2AE7DBCD00B7B442 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		7ADC16432AE7DBE900B7B442 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7ADC16462AE7DBF800B7B442 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7ADC164B2AE7E01000B7B442 /* PrimaryItemTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryItemTabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +77,7 @@
 		7A92628F2AE68CAA00B4BE08 /* GoAround */ = {
 			isa = PBXGroup;
 			children = (
+				7ADC16482AE7DF4100B7B442 /* Core */,
 				7A92629E2AE68F6500B4BE08 /* Scenes */,
 				7A9262902AE68CAA00B4BE08 /* GoAroundApp.swift */,
 				7A9262922AE68CAA00B4BE08 /* ContentView.swift */,
@@ -75,6 +98,11 @@
 		7A92629E2AE68F6500B4BE08 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7ADC16412AE7DBDD00B7B442 /* Profile */,
+				7ADC163A2AE7DBA500B7B442 /* Message */,
+				7ADC16332AE7DB6B00B7B442 /* AddCar */,
+				7ADC162C2AE7DB4000B7B442 /* Trip */,
+				7ADC16252AE7DAC100B7B442 /* CarDetail */,
 				7A92629F2AE68F6D00B4BE08 /* Home */,
 			);
 			path = Scenes;
@@ -103,6 +131,147 @@
 				7A9262A42AE6988400B4BE08 /* HomeViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ADC16252AE7DAC100B7B442 /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16292AE7DAFA00B7B442 /* Presentation */,
+				7ADC16262AE7DACC00B7B442 /* View */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
+		7ADC16262AE7DACC00B7B442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16272AE7DAF300B7B442 /* CarDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ADC16292AE7DAFA00B7B442 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC162A2AE7DB0600B7B442 /* CarDetailViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ADC162C2AE7DB4000B7B442 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16302AE7DB5600B7B442 /* Presentation */,
+				7ADC162D2AE7DB4800B7B442 /* View */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		7ADC162D2AE7DB4800B7B442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC162E2AE7DB4F00B7B442 /* TripView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ADC16302AE7DB5600B7B442 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16312AE7DB6200B7B442 /* TripViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ADC16332AE7DB6B00B7B442 /* AddCar */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16372AE7DB8100B7B442 /* Presentation */,
+				7ADC16342AE7DB7200B7B442 /* View */,
+			);
+			path = AddCar;
+			sourceTree = "<group>";
+		};
+		7ADC16342AE7DB7200B7B442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16352AE7DB7B00B7B442 /* AddCarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ADC16372AE7DB8100B7B442 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16382AE7DB8E00B7B442 /* AddCarViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ADC163A2AE7DBA500B7B442 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC163E2AE7DBC000B7B442 /* Presentation */,
+				7ADC163B2AE7DBAA00B7B442 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		7ADC163B2AE7DBAA00B7B442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC163C2AE7DBB800B7B442 /* MessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ADC163E2AE7DBC000B7B442 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC163F2AE7DBCD00B7B442 /* MessageViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ADC16412AE7DBDD00B7B442 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16452AE7DBEC00B7B442 /* Presentation */,
+				7ADC16422AE7DBE200B7B442 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7ADC16422AE7DBE200B7B442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16432AE7DBE900B7B442 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ADC16452AE7DBEC00B7B442 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16462AE7DBF800B7B442 /* ProfileViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7ADC16482AE7DF4100B7B442 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC16492AE7DF4600B7B442 /* View */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7ADC16492AE7DF4600B7B442 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC164B2AE7E01000B7B442 /* PrimaryItemTabBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +345,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9262A22AE6983200B4BE08 /* HomeView.swift in Sources */,
+				7ADC164C2AE7E01000B7B442 /* PrimaryItemTabBarView.swift in Sources */,
+				7ADC16442AE7DBE900B7B442 /* ProfileView.swift in Sources */,
+				7ADC16322AE7DB6200B7B442 /* TripViewModel.swift in Sources */,
 				7A9262932AE68CAA00B4BE08 /* ContentView.swift in Sources */,
+				7ADC16362AE7DB7B00B7B442 /* AddCarView.swift in Sources */,
+				7ADC162B2AE7DB0600B7B442 /* CarDetailViewModel.swift in Sources */,
+				7ADC16472AE7DBF800B7B442 /* ProfileViewModel.swift in Sources */,
 				7A9262912AE68CAA00B4BE08 /* GoAroundApp.swift in Sources */,
+				7ADC163D2AE7DBB800B7B442 /* MessageView.swift in Sources */,
+				7ADC16282AE7DAF300B7B442 /* CarDetailView.swift in Sources */,
 				7A9262A52AE6988400B4BE08 /* HomeViewModel.swift in Sources */,
+				7ADC162F2AE7DB4F00B7B442 /* TripView.swift in Sources */,
+				7ADC16402AE7DBCD00B7B442 /* MessageViewModel.swift in Sources */,
+				7ADC16392AE7DB8E00B7B442 /* AddCarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
