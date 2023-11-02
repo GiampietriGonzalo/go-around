@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddCarView: View {
     var body: some View {
-        Text("AddCarView")
+        Text("Add Car View")
     }
 }
 

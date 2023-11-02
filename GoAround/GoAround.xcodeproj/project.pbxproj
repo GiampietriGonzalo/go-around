@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0AB0CD2AE9B7CC00B77114 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AB0CC2AE9B7CC00B77114 /* TabBarItem.swift */; };
+		7A0AB0D02AEA877E00B77114 /* TabBarViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AB0CF2AEA877E00B77114 /* TabBarViewConstants.swift */; };
+		7A0AB0D82AEAEDD000B77114 /* SecondaryTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AB0D72AEAEDD000B77114 /* SecondaryTabBarItem.swift */; };
+		7A0AB0DA2AEAF56600B77114 /* PrimaryTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0AB0D92AEAF56600B77114 /* PrimaryTabItemView.swift */; };
 		7A9262912AE68CAA00B4BE08 /* GoAroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9262902AE68CAA00B4BE08 /* GoAroundApp.swift */; };
-		7A9262932AE68CAA00B4BE08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9262922AE68CAA00B4BE08 /* ContentView.swift */; };
 		7A9262952AE68CAD00B4BE08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9262942AE68CAD00B4BE08 /* Assets.xcassets */; };
 		7A9262982AE68CAD00B4BE08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9262972AE68CAD00B4BE08 /* Preview Assets.xcassets */; };
 		7A9262A22AE6983200B4BE08 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9262A12AE6983200B4BE08 /* HomeView.swift */; };
@@ -27,9 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0AB0CC2AE9B7CC00B77114 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		7A0AB0CF2AEA877E00B77114 /* TabBarViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewConstants.swift; sourceTree = "<group>"; };
+		7A0AB0D72AEAEDD000B77114 /* SecondaryTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTabBarItem.swift; sourceTree = "<group>"; };
+		7A0AB0D92AEAF56600B77114 /* PrimaryTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTabItemView.swift; sourceTree = "<group>"; };
 		7A92628D2AE68CAA00B4BE08 /* GoAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A9262902AE68CAA00B4BE08 /* GoAroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAroundApp.swift; sourceTree = "<group>"; };
-		7A9262922AE68CAA00B4BE08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A9262942AE68CAD00B4BE08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9262972AE68CAD00B4BE08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A9262A12AE6983200B4BE08 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0AB0CE2AEA876C00B77114 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7A0AB0CF2AEA877E00B77114 /* TabBarViewConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		7A9262842AE68CA900B4BE08 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +94,6 @@
 				7ADC16482AE7DF4100B7B442 /* Core */,
 				7A92629E2AE68F6500B4BE08 /* Scenes */,
 				7A9262902AE68CAA00B4BE08 /* GoAroundApp.swift */,
-				7A9262922AE68CAA00B4BE08 /* ContentView.swift */,
 				7A9262942AE68CAD00B4BE08 /* Assets.xcassets */,
 				7A9262962AE68CAD00B4BE08 /* Preview Content */,
 			);
@@ -261,6 +274,7 @@
 		7ADC16482AE7DF4100B7B442 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				7A0AB0CE2AEA876C00B77114 /* Constants */,
 				7ADC16492AE7DF4600B7B442 /* View */,
 			);
 			path = Core;
@@ -269,9 +283,20 @@
 		7ADC16492AE7DF4600B7B442 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7ADC164B2AE7E01000B7B442 /* PrimaryItemTabBarView.swift */,
+				7ADC164D2AE80B8200B7B442 /* TabBar */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7ADC164D2AE80B8200B7B442 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC164B2AE7E01000B7B442 /* PrimaryItemTabBarView.swift */,
+				7A0AB0CC2AE9B7CC00B77114 /* TabBarItem.swift */,
+				7A0AB0D72AEAEDD000B77114 /* SecondaryTabBarItem.swift */,
+				7A0AB0D92AEAF56600B77114 /* PrimaryTabItemView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,9 +371,10 @@
 			files = (
 				7A9262A22AE6983200B4BE08 /* HomeView.swift in Sources */,
 				7ADC164C2AE7E01000B7B442 /* PrimaryItemTabBarView.swift in Sources */,
+				7A0AB0CD2AE9B7CC00B77114 /* TabBarItem.swift in Sources */,
 				7ADC16442AE7DBE900B7B442 /* ProfileView.swift in Sources */,
 				7ADC16322AE7DB6200B7B442 /* TripViewModel.swift in Sources */,
-				7A9262932AE68CAA00B4BE08 /* ContentView.swift in Sources */,
+				7A0AB0D82AEAEDD000B77114 /* SecondaryTabBarItem.swift in Sources */,
 				7ADC16362AE7DB7B00B7B442 /* AddCarView.swift in Sources */,
 				7ADC162B2AE7DB0600B7B442 /* CarDetailViewModel.swift in Sources */,
 				7ADC16472AE7DBF800B7B442 /* ProfileViewModel.swift in Sources */,
@@ -356,7 +382,9 @@
 				7ADC163D2AE7DBB800B7B442 /* MessageView.swift in Sources */,
 				7ADC16282AE7DAF300B7B442 /* CarDetailView.swift in Sources */,
 				7A9262A52AE6988400B4BE08 /* HomeViewModel.swift in Sources */,
+				7A0AB0D02AEA877E00B77114 /* TabBarViewConstants.swift in Sources */,
 				7ADC162F2AE7DB4F00B7B442 /* TripView.swift in Sources */,
+				7A0AB0DA2AEAF56600B77114 /* PrimaryTabItemView.swift in Sources */,
 				7ADC16402AE7DBCD00B7B442 /* MessageViewModel.swift in Sources */,
 				7ADC16392AE7DB8E00B7B442 /* AddCarViewModel.swift in Sources */,
 			);
@@ -417,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -474,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -499,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +556,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

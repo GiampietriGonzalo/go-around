@@ -11,7 +11,7 @@ import SwiftUI
 struct GoAroundApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PrimaryItemTabBarView()
         }
     }
 }
