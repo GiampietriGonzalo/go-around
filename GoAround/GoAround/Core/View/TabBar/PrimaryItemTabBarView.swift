@@ -7,59 +7,33 @@
 
 import SwiftUI
 
-struct PrimaryItemTabBarView: View {
+public struct PrimaryItemTabBarView: View {
     
-    @State var selectedTab = 0
+    var model: PrimaryItemTabBarModel
     
-    var body: some View {
-        ZStack(alignment: .bottom) {
-            TabView(selection: $selectedTab) {
-                HomeView()
-                    .tag(TabBarItemType.home.rawValue)
-                    .tabItem {
-                        SecondaryTabBarItem(isActive: selectedTab == TabBarItemType.home.rawValue,
-                                            iconName: TabBarItemType.home.iconName)
-                    }
+    public var body: some View {
+        HStack(alignment: .bottom) {
+            ForEach(model.items) { itemWrapper in
+                Spacer()
                 
-                TripView()
-                    .tag(TabBarItemType.trip.rawValue)
-                    .tabItem {
-                        SecondaryTabBarItem(isActive: selectedTab == TabBarItemType.trip.rawValue,
-                                            iconName: TabBarItemType.trip.iconName)
-                    }
+                if itemWrapper.item.type == .primary, let itemModel = itemWrapper.item as? PrimaryItemTabBarPrimaryItemModel {
+                    PrimaryItemTabBarPrimaryItemView(model: itemModel)
+                        .onTapGesture { model.selectedTab = itemModel.tabPosition }
+                } else if let itemModel = itemWrapper.item as? PrimaryItemTabBarSecondaryItemModel {
+                    PrimaryItemTabBarSecondaryItemView(model: itemModel, isActive: itemModel.tabPosition == model.selectedTab)
+                        .onTapGesture { model.selectedTab = itemModel.tabPosition }
+                }
                 
-                AddCarView()
-                    .tag(TabBarItemType.add.rawValue)
-                
-                MessageView()
-                    .tag(TabBarItemType.message.rawValue)
-                    .tabItem {
-                        SecondaryTabBarItem(isActive: selectedTab == TabBarItemType.message.rawValue,
-                                            iconName: TabBarItemType.message.iconName)
-                    }
-                
-                ProfileView()
-                    .tag(TabBarItemType.profile.rawValue)
-                    .tabItem {
-                        SecondaryTabBarItem(isActive: selectedTab == TabBarItemType.profile.rawValue,
-                                            iconName: TabBarItemType.profile.iconName)
-                    }
+                Spacer()
             }
-            
-            HStack {
-                Spacer()
-                PrimaryTabItemView()
-                    .onTapGesture { selectedTab = TabBarItemType.add.rawValue }
-                Spacer()
-            }.padding(.bottom, 16)
         }
+        .padding(.horizontal, 8)
+        
     }
-    
-    
 }
 
 #Preview {
-    PrimaryItemTabBarView()
+    PrimaryItemTabBarView(model: TabBarViewConstants.tabBarModel)
 }
 
 
