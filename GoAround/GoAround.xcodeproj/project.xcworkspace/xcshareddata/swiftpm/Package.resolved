@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "comet-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GiampietriGonzalo/comet-ui.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bcc4c2a80cfc101d0568e21964ad18be57338537"
+      }
+    }
+  ],
+  "version" : 2
+}

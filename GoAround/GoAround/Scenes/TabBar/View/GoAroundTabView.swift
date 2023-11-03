@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CometUI
 
 struct GoAroundTabView: View {
     @Bindable var tabBarModel: PrimaryItemTabBarModel
